@@ -40,8 +40,6 @@
     <!-- About Section -->
     <div id="about" class="w3-container w3-padding-32">
         <h2>About Us</h2>
-
-        <br><br>
         <h4>MANDATE</h4>
 
          <p>Provide central direction, leadership and coordination of scientific and technological efforts and ensure
