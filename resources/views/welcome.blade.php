@@ -50,7 +50,7 @@ body {font-family: "Lato", sans-serif}
 </div>
 
 <!-- Map Image -->
-<img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+<img src="https://your-vercel-project.vercel.app/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
 </body>
 </html>
