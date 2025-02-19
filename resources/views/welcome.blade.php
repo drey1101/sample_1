@@ -1,114 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>/title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
-
-        form {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        input {
-            padding: 8px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        button {
-            background-color: #28a745;
-            color: white;
-            padding: 8px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        button:hover {
-            background-color: #218838;
-        }
-
-        #result {
-            margin-top: 20px;
-            font-size: 18px;
-            font-weight: bold;
-        }
-    </style>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 
-    <!-- Form for checking ID number (10pts)-->
-    <form id="checkForm">
-        Enter enrolled ID:
-        <input type="text" id="id" maxlength="8">
-        <button type="submit">Enter</button>
-    </form>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+  <img class="w3-image" src="/w3images/photographer.jpg" alt="Me" width="1500" height="600">
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Wonder Woman</h1>
+    <h5 class="w3-hide-large" style="white-space:nowrap">Wonader Woman</h5>
+    <h3 class="w3-hide-medium w3-hide-small">SUper hero</h3>
+  </div>
+  
+  <!-- Navbar (placed at the bottom of the header image) -->
+  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+    <a href="#" class="w3-bar-item w3-button">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+  </div>
+</header>
 
-    <!--  Displaying the result of check (5pts)-->
-    <div id="result"></div>
+<!-- Navbar on small screens -->
+<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
+<div class="w3-bar w3-light-grey">
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
+  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+</div>
+</div>
+<!-- Page content -->
+<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
 
-    <script>
-        //dummy IDs
-        const enrolledIds = [
-            '22000123', '22000124', '22000125', '22000126', '22000127',
-            '22000128', '22000129', '22000130', '22000131', '22000132', 
-            '22000133', '22000134', '22000135', '22000136', '22000137', 
-            '22000138', '22000139', '22000140', '22000141', '22000142',
-        ];
+  <!-- Images (Portfolio) -->
+  <img src="/w3images/ocean.jpg" alt="Ocean" class="w3-image" width="1000" height="500">
+  <img src="/w3images/ocean2.jpg" alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="/w3images/falls2.jpg" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="/w3images/mountainskies.jpg" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="/w3images/mountains2.jpg" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
 
-        function checkStudent(studId) {
-            return new Promise((resolve) => {
-                setTimeout(() => {
-                    resolve(enrolledIds.includes(studId));
-                }, 2000);
-            });
-        }
+  <!-- Contact -->
+  <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
+    <h3 class="w3-center">Contact</h3>
+    <hr>
+    <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus.</p>
 
-        function contactRegistrar() {
-            return new Promise((resolve) => {
-                setTimeout(() => {
-                    resolve(confirm("Student is not enrolled. Do you want to contact the registrar?") 
-                        ? "Registrar has been contacted" 
-                        : "Registrar has not been contacted"
-                    );
-                }, 500);
-            });
-        }
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" required name="Name">
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" required name="Email">
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" required name="Message">
+      </div>
+      <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
+    </form><br>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 
-        document.getElementById('checkForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const studId = document.getElementById('id').value.trim();
-            const resultDiv = document.getElementById('result');
-            resultDiv.textContent = "Loading...";
+  </div>
 
-            checkStudent(studId)
-                .then((enrolled) => {
-                    resultDiv.textContent = enrolled ? "Enrolled!" : "Not Enrolled!";
-                    return enrolled ? null : contactRegistrar();
-                })
-                .then((message) => {
-                    if (message) resultDiv.textContent += " " + message;
-                })
-                .catch((error) => {
-                    resultDiv.textContent = "Error: " + error;
-                });
-        });
-    </script>
+<!-- End page content -->
+</div>
+
 </body>
 </html>
