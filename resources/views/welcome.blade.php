@@ -31,7 +31,7 @@
     </div>
     
     <!-- Hero Section -->
-   <div class="hero-section w3-container w3-center w3-navy blue">
+   <div class="hero-section w3-container w3-center w3-navyblue">
     <h1>Welcome to DOST</h1>
     <p>Department of Science and Technology</p>
 </div>
