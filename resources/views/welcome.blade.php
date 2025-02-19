@@ -31,10 +31,11 @@
     </div>
     
     <!-- Hero Section -->
-    <div class="hero-section w3-container w3-center">
-        <h1>Welcome to DOST</h1>
-        <p>Science and Technology for the People</p>
-    </div>
+   <div class="hero-section w3-container w3-center w3-blue">
+    <h1>Welcome to DOST</h1>
+    <p>Department of Science and Technology</p>
+</div>
+
     
     <!-- About Section -->
     <div id="about" class="w3-container w3-padding-32">
