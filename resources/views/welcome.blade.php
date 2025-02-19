@@ -31,7 +31,7 @@
     </div>
     
     <!-- Hero Section -->
-   <div class="hero-section w3-container w3-center w3-blue">
+   <div class="hero-section w3-container w3-center w3-navy blue">
     <h1>Welcome to DOST</h1>
     <p>Department of Science and Technology</p>
 </div>
@@ -40,20 +40,22 @@
     <!-- About Section -->
     <div id="about" class="w3-container w3-padding-32">
         <h2>About Us</h2>
-        <p>The Department of Science and Technology (DOST) is the premiere science and technology body in the Philippines...</p>
 
         <br><br>
         <h4>MANDATE</h4>
 
-         <p>Provide central direction, leadership and coordination of scientific and technological efforts and ensure that the results therefrom are geared and utilized in areas of maximum economic and social benefits for the people. </p>
+         <p>Provide central direction, leadership and coordination of scientific and technological efforts and ensure
+        that the results therefrom are geared and utilized in areas of maximum economic and social benefits for the people. </p>
 
 <br> <br>
 <h4>MISSION</h4>
-<p>To direct, lead, and coordinate the country's scientific, technological, and innovative efforts geared towards maximum economic and social benefits for the people.</p>
+<p>To direct, lead, and coordinate the country's scientific, technological, and innovative efforts 
+geared towards maximum economic and social benefits for the people.</p>
 
 <br> <br>
 <h4>VISSION</h4>
-<p>DOST as the leading enabler and provider of science, technology, and innovation (STI) explicit solutions towards national development.</p>
+<p>DOST as the leading enabler and provider of science, technology, and innovation 
+(STI) explicit solutions towards national development.</p>
     </div>
     
     <!-- Featured Projects -->
